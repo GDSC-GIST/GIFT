@@ -3,25 +3,22 @@ import styled from 'styled-components';
 import {useHistory} from 'react-router-dom';
 
 const Button = styled.button`
-/* 공통 스타일 */
-display: inline-flex;
-outline: none;
-border: none;
-color: black;
-cursor: pointer;
-padding: 1rem 2.5rem;
-margin-left : 10%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  margin: 0 5% 0 20%;
+  /* 크기 */
+  height: 3rem;
+  width: 9rem;
+  font-size: 1rem;
 
-/* 크기 */
-height: 3rem;
-width: 7rem;
-font-size: 1rem;
-
-/* 색상 */
-background: white;
-&:active {
-  background: #bebebe;
-}
+  /* 색상 */
+  background: transparent;
 `;
 
 
@@ -32,7 +29,7 @@ const BackButton = () => {
   }
     return (
       <Button onClick ={handleUseHistory}>
-        이전
+        {'<'}  이전
       </Button>
     )
 };

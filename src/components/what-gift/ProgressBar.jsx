@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 
 const Container = styled.div(({ hidden }) => ({
     display : 'flex',
-    margin: '5% 0 2% 0',
+    margin: '5% 0 0 0',
     height: '1em',
-    backgroundColor:'gray',
+    backgroundColor:'#ececec',
     visibility: hidden ? 'hidden' : '',
 
 }));

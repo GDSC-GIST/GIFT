@@ -2,23 +2,25 @@ import React  from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-display:
-outline: none;
-border: none;
-color: black;
-cursor: pointer;
-padding: 1rem 2.5rem;
-margin: 1% 25%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  margin: 10% auto;
 
-height: 30%;
-width: 50%;
-font-size: 1rem;
+  height: 80px;
+  width: 400px;
+  font-size: 1rem;
 
-background: #bebebe;
-&:active {
-  background: #828282;
-}
-
+  background: #fff8f0;
+  &:active {
+    background: #ff6464;
+  }
 `;
 
 function Answer({children, ...rest}) {

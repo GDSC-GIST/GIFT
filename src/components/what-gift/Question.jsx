@@ -1,15 +1,15 @@
 import React from 'react';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
-const Container = styled.div({
-    padding: '.5em',
-    textAlign: 'center',
-    fontWeight: 'bold',
-});
+const Container = styled.div`
 
-const Title = styled.span({
+    text-align: center;
+    font-weight: bold;
+`;
+
+const Title = styled.span`
     fontSize: '1.5em',
-});
+`;
 
 export default function Question({ title, question}){
     return (
