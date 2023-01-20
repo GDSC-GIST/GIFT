@@ -1,24 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BackButton from '../components/what-gift/BackButton';
 import NextButton from '../components/what-gift/NextButton';
 import ProgressBar from '../components/what-gift/ProgressBar';
 import Question from '../components/what-gift/Question';
 import Answer from '../components/what-gift/Answer';
+import questions from '../assets/questions'
 
+function WhatgiftPage() {
 
+  questions=questions;
+  const [type,setType]=useState(0);
+  const [number,setNumber]=useState(1);
+  const [clicked,setClicked]=useState(0);
+  const onClick=(e)=>{
+    console.log(e.target.innerText);
+    setNumber((prevNum)=>prevNum+1);
+  };
 
-export default function whatgiftPage() {
+  const makeQuestion=(opNum)=>{
+    if(opNum===2){
+      return (
+        <>
+      <Answer onClick={onClick}>{questions[number].options[0]}</Answer>
+      <Answer onClick={onClick}>{questions[number].options[1]}</Answer>
+      </>
+      );
+    }
+    else if(opNum===4){
+      return (
+        <>
+      <Answer onClick={onClick}>{questions[number].options[0]}</Answer>
+      <Answer onClick={onClick}>{questions[number].options[1]}</Answer>
+      <Answer onClick={onClick}>{questions[number].options[2]}</Answer>
+      <Answer onClick={onClick}>{questions[number].options[3]}</Answer>
+      </>
+      );
+    }
+  };
+
   return (
     <div>
       <ProgressBar percent='50'/>
       <div>
-        <Question title='Q1' question='질문을 적습니다.'/>
+        <Question number={number} question={questions[number].content}/>
       </div>
-      <div >
-      <Answer>답변이 있습니다</Answer>
-      <Answer>답변이 있습니다</Answer>
-      <Answer>답변이 있습니다</Answer>
-      <Answer>답변이 있습니다</Answer>
+      <div>
+      {makeQuestion(questions[number].opNum)}
       </div>
       <div class='pagebutton'>
       <BackButton /> 
@@ -26,4 +53,6 @@ export default function whatgiftPage() {
       </div>
     </div>
   );
-};
+}
+
+export default WhatgiftPage;
