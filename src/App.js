@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
-import whatgiftPage from './pages/whatgiftPage';
+import WhatgiftPage from './pages/WhatgiftPage';
 import StartPage from './pages/StartPage';
 import ResultPage from './pages/ResultPage';
 
@@ -10,7 +10,7 @@ function App(){
     <>
     <Switch>
       <Route exact path='/' component={StartPage}/>
-      <Route path='/whatgift' component={whatgiftPage}/>  
+      <Route path='/whatgift' component={WhatgiftPage}/>  
       <Route path='/result' component={ResultPage}/>    
     </Switch>
     </>

@@ -11,10 +11,10 @@ const Title = styled.span({
     fontSize: '1.5em',
 });
 
-export default function Question({ title, question}){
+export default function Question({ number, question}){
     return (
         <Container>
-            <Title>{title}</Title>
+            <Title>Q{number}</Title>
             <div>
             <p>{question}</p>
             </div>
