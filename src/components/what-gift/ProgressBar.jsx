@@ -10,20 +10,20 @@ const Container = styled.div(({ hidden }) => ({
 
 }));
 
-const Indicator = styled.div(({ precent }) => ({
+const Indicator = styled.div(({ percent }) => ({
     display: 'inline-block',
     height: '.25em',
 
-    width: `${precent}%`,
+    width: `${percent}%`,
     background: `linear-gradient(
         90deg,
         rgba(255, 255, 255, 1) 0%,)`
 }));
 
-export default function ProgressBar({ hidden, precent }) {
+export default function ProgressBar({ hidden, percent }) {
     return(
         <Container hidden={hidden}>
-            <Indicator precent={precent} />
+            <Indicator percent={percent} />
         </Container>
     )
 }
