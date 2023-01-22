@@ -83,6 +83,7 @@ function WhatgiftPage() {
     }
   };
 
+
   return (
     <div>
       <ProgressBar percent={qNum}/>
