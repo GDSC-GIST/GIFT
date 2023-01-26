@@ -3,8 +3,8 @@ import ProgressBar from '../components/what-gift/ProgressBar';
 import Question from '../components/what-gift/Question';
 import Answer from '../components/what-gift/Answer';
 import questions from '../assets/questions';
-import testImg from '../assets/result_img/test.png';
 import { useHistory } from 'react-router-dom';
+import QImage from '../components/what-gift/QImage';
 
 function WhatgiftPage() {
 
@@ -66,7 +66,7 @@ function WhatgiftPage() {
     if(q.opNum===2){
       return (
         <>
-        <img src={testImg} alt='test_img' height='300'/>
+        <QImage number='1'/>
         <Answer onClick={onClick} name='0'>{q.options[0]}</Answer>
         <Answer onClick={onClick} name='1'>{q.options[1]}</Answer>
         </>
