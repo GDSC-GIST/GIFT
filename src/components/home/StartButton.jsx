@@ -22,6 +22,8 @@ const Button = styled.button`
     color: white;
     margin : 0 auto;
 
+    font-family: 'Gowun Dodum', sans-serif;
+
 `;
 
 

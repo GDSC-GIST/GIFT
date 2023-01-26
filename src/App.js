@@ -12,9 +12,8 @@ function App(){
     <>
     <Switch>
       <Route exact path='/' component={StartPage}/>
-      <Route path='/whatgift' component={WhatgiftPage}/>  
+      <Route path='/whatgift' component={WhatgiftPage}/> 
       <Route path='/prepare' component={PreparePage}/> 
-
       <Route path='/result' component={ResultPage}/>    
     </Switch>
     </>

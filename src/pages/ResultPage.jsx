@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Restart from '../components/result/Restart';
+import Share from '../components/result/Share';
+
 
 const Result = styled.div`
     position : relative;
@@ -32,9 +34,11 @@ function ResultPage(props) {
             ~~하지 않으신가요??? <br />
             ~~~~
             ~~~
+            <h4> 내 결과 공유하기 </h4>
             </Container>
+            <Share /> 
         </Result>
-        <Restart />
+        <Restart />        
         </>
     );
 }

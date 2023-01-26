@@ -16,6 +16,7 @@ const StyledButton = styled.button`
   height: 80px;
   width: 400px;
   font-size: 1rem;
+  font-family: 'Gowun Dodum', sans-serif;
 
   background: #fff8f0;
   &:active {

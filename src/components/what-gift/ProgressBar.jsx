@@ -1,29 +1,27 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React, {useRef} from 'react';
+import styled from 'styled-components';
 
-const Container = styled.div(({ hidden }) => ({
-    display : 'flex',
-    margin: '5% 0 0 0',
-    height: '1em',
-    backgroundColor:'#ececec',
-    visibility: hidden ? 'hidden' : '',
+const Container = styled.div`
+    display: flex;
+    height : .5em;
+    background: #ECECEC;
+    visibility: ${props => props.hidden ? 'hidden' : 'visible'};
+    margin-top : 5%;
+`;
 
-}));
+const Filler = styled.div`
+    display : inline-block;
+    height: .5em;
+    width : ${props => props.percent}%;
+    background: #959595;
+`;
 
-const Indicator = styled.div(({ percent }) => ({
-    display: 'inline-block',
-    height: '.25em',
+export default function ProgressBar({hidden, percent}) {
 
-    width: `${percent}%`,
-    background: `linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 0%,)`
-}));
-
-export default function ProgressBar({ hidden, percent }) {
     return(
-        <Container hidden={hidden}>
-            <Indicator percent={percent} />
+        <Container hidden ={hidden}>
+            <Filler percent={percent} />
         </Container>
-    )
+
+    );
 }

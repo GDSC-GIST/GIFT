@@ -17,7 +17,7 @@ function WhatgiftPage() {
   const ansClicked=useRef(false);
   const qNum=useRef(12);
   const history=useHistory();
-
+  const Percent = (number-1)/qNum.current*100;
   const onClick=(e)=>{
     ansClicked.current=true;
     setAnswers([...answers,e.target.name]); //or e.target.innerText
@@ -96,7 +96,7 @@ function WhatgiftPage() {
 
   return (
     <div>
-      <ProgressBar percent={qNum}/>
+      <ProgressBar  percent={Percent}/>
       <div>
         <Question number={number} question={questions[index.current].content}/>
       </div>
