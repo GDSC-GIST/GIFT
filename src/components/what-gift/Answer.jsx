@@ -11,10 +11,11 @@ const StyledButton = styled.button`
   color: black;
   cursor: pointer;
   padding: 1rem 2.5rem;
-  margin: 10% auto;
+  margin: 32px auto;
+  
 
-  height: 80px;
-  width: 400px;
+  height: 75px;
+  width: 500px;
   font-size: 1rem;
   font-family: 'Gowun Dodum', sans-serif;
 
