@@ -21,7 +21,17 @@ function WhatgiftPage() {
   const onClick=(e)=>{
     ansClicked.current=true;
     setAnswers([...answers,e.target.name]); //or e.target.innerText
-  };
+  
+    //test: transfer data to server
+    fetch("http://localhost:3000/text", { //text 주소에서 받을 예정
+      method: "post", //통신방법
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(e.target.name), //객체를 보냄
+    });
+
+    };
 
   useEffect(()=>{ //answers의 값이 변할 때 실행
     console.log(answers);
@@ -30,7 +40,7 @@ function WhatgiftPage() {
       index.current+=1;
 
       if(number===qNum.current){
-        history.push('/result');
+        history.push('/prepare');
       }
       if(type.current===6 || number===6){
         console.log("finished default Qs");
