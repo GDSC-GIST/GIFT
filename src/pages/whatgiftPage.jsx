@@ -4,7 +4,7 @@ import Question from '../components/what-gift/Question';
 import Answer from '../components/what-gift/Answer';
 import questions from '../assets/questions';
 import { useHistory } from 'react-router-dom';
-import QImage from '../components/what-gift/QImage';
+import Image from '../components/what-gift/Image';
 
 function WhatgiftPage() {
 
@@ -66,7 +66,7 @@ function WhatgiftPage() {
     if(q.opNum===2){
       return (
         <>
-        <QImage number='1'/>
+        <Image height='190' filename='question_img/test.png'/>
         <Answer onClick={onClick} name='0'>{q.options[0]}</Answer>
         <Answer onClick={onClick} name='1'>{q.options[1]}</Answer>
         </>
