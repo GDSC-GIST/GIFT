@@ -64,9 +64,13 @@ function WhatgiftPage() {
 
   const makeQuestion=(q)=>{ //질문에 따라 나타나는 화면 결정
     if(q.opNum===2){
+      let filename='test.png';
+      if (type.current===0){
+        filename=''+q.id+'.jpg'; //(picture) or png(sketch)
+      }
       return (
         <>
-        <Image height='190' filename='question_img/test.png'/>
+        <Image height='190' filename={'question_img/'+filename}/>
         <Answer onClick={onClick} name='0'>{q.options[0]}</Answer>
         <Answer onClick={onClick} name='1'>{q.options[1]}</Answer>
         </>
