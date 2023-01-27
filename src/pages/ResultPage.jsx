@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Restart from '../components/result/Restart';
 import Share from '../components/result/Share';
+import Image from '../components/what-gift/Image';
 
 
 const Result = styled.div`
@@ -29,6 +30,7 @@ function ResultPage(props) {
             <br /><br /><br />
             <h2>당신을 위한 선물은</h2>
             <h1>"식물"</h1>
+            <Image height='215' filename='result_img/1_1.png'></Image>
 
             ~~한 당신에게는 식물이 어울려요 <br />
             ~~하지 않으신가요??? <br />

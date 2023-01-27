@@ -3,8 +3,8 @@ import ProgressBar from '../components/what-gift/ProgressBar';
 import Question from '../components/what-gift/Question';
 import Answer from '../components/what-gift/Answer';
 import questions from '../assets/questions';
-import testImg from '../assets/result_img/test.png';
 import { useHistory } from 'react-router-dom';
+import Image from '../components/what-gift/Image';
 
 function WhatgiftPage() {
 
@@ -64,9 +64,13 @@ function WhatgiftPage() {
 
   const makeQuestion=(q)=>{ //질문에 따라 나타나는 화면 결정
     if(q.opNum===2){
+      let filename='test.png';
+      if (type.current===0){
+        filename=''+q.id+'.jpg'; //(picture) or png(sketch)
+      }
       return (
         <>
-        <img src={testImg} alt='test_img' height='300'/>
+        <Image height='190' filename={'question_img/'+filename}/>
         <Answer onClick={onClick} name='0'>{q.options[0]}</Answer>
         <Answer onClick={onClick} name='1'>{q.options[1]}</Answer>
         </>
