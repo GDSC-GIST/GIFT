@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import gift from '../styles/gift.png';
+import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom';
+import lottie  from '../assets/lottie';
 
-const giftimage = <img src={gift} alt='React'></img>;
 
 const Prepare = styled.div`
     display: flex;
@@ -22,7 +22,7 @@ function PreparePage() {
         <h2>당신의 선물이 준비되었습니다!</h2>
         <h3>{'>'} 클릭하여 선물 열기 {'<'}</h3>
         <Link to='/result'>
-            {giftimage}
+            <Lottie animationData={lottie} />
         </Link>
         
         </Prepare>
