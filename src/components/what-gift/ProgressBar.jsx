@@ -7,6 +7,7 @@ const Container = styled.div`
     background: #ECECEC;
     visibility: ${props => props.hidden ? 'hidden' : 'visible'};
     margin-top : 5%;
+    width: 100%;
 `;
 
 const Filler = styled.div`

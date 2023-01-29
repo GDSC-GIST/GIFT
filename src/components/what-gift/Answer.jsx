@@ -15,7 +15,7 @@ const StyledButton = styled.button`
   
 
   height: 75px;
-  width: 500px;
+  width: 360px;
   font-size: 1rem;
   font-family: 'Gowun Dodum', sans-serif;
 

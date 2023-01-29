@@ -3,7 +3,6 @@ import React from 'react';
 import StartButton from '../components/home/StartButton';
 import gift from '../styles/gift.png';
 
-const giftimage = <img src={gift} alt='React'></img>;
 
 
 const Start = styled.div`
@@ -11,10 +10,9 @@ const Start = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    width: 512px;
-    height: 768px;
-    margin : 0 auto;
+    min-height: 100%;
+    max-width: 100%
+    margin : auto;
     
 `;
 
@@ -23,17 +21,16 @@ function StartPage({
     handleClickTest
 }){
     return (
-        <>
         <Start>
+            <br /><br /><br />
             <h4>GDSC GIST</h4>
             <h1>선물 취향 테스트</h1>
-            {giftimage}
+            <img src={gift} alt="gift" width="350" height="200" />
             <br /><br />
             <StartButton
             onclickTest = {handleClickTest}
             />
         </Start>
-        </>
     );
 }
 
