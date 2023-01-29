@@ -5,6 +5,8 @@ import Answer from '../components/what-gift/Answer';
 import questions from '../assets/questions';
 import { useHistory } from 'react-router-dom';
 import Image from '../components/what-gift/Image';
+import { ReactComponent as Box } from '../styles/closedBox.svg';
+import Conveyer from '../components/what-gift/Conveyer';
 
 function WhatgiftPage() {
 
@@ -17,7 +19,7 @@ function WhatgiftPage() {
   const ansClicked=useRef(false);
   const qNum=useRef(12);
   const history=useHistory();
-  const Percent = (number-1)/qNum.current*100;
+  const Percent = (number-1)/qNum.current;
   const onClick=(e)=>{
     ansClicked.current=true;
     setAnswers([...answers,e.target.name]); //or e.target.innerText
@@ -66,7 +68,7 @@ function WhatgiftPage() {
     if(q.opNum===2){
       let filename='test.png';
       if (type.current===0){
-        filename=''+q.id+'.jpg'; //(picture) or png(sketch)
+        filename=''+q.id+'.png'; //(picture) or png(sketch)
       }
       return (
         <>
@@ -100,7 +102,7 @@ function WhatgiftPage() {
 
   return (
     <div>
-      <ProgressBar  percent={Percent}/>
+      <Conveyer type={type.current} percent={Percent}></Conveyer>
       <div>
         <Question number={number} question={questions[index.current].content}/>
       </div>

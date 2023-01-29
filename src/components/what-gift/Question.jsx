@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     text-align: center;
     font-weight: bold;
-    margin-top: 75px;
+    margin-top: 55px;
 `;
 
 const Title = styled.span`
