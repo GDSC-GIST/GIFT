@@ -5,7 +5,7 @@ import { ReactComponent as DefaultBox } from "../../styles/defaultBox.svg";
 const Svg = styled.svg`
     display: flex;
     height : 1em;
-    margin: 0px auto;
+    margin: -5px auto;
 `;
 
 const Container=styled.div`
