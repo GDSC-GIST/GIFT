@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     display: flex;
-    height : .5em;
+    height : 1em;
     background: #ECECEC;
     visibility: ${props => props.hidden ? 'hidden' : 'visible'};
     margin-top : 5%;
@@ -11,7 +11,7 @@ const Container = styled.div`
 
 const Filler = styled.div`
     display : inline-block;
-    height: .5em;
+    height: 1em;
     width : ${props => props.percent}%;
     background: #959595;
 `;
