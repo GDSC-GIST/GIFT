@@ -10,15 +10,13 @@ const Prepare = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    width: 512px;
-    height: 768px;
     margin : 0 auto;
 `;
 
 function PreparePage() {
     return (
         <Prepare>
+            <br /><br /><br />
         <h2>당신의 선물이 준비되었습니다!</h2>
         <h3>{'>'} 클릭하여 선물 열기 {'<'}</h3>
         <Link to='/result'>
