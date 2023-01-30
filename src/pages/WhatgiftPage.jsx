@@ -5,7 +5,6 @@ import Answer from '../components/what-gift/Answer';
 import questions from '../assets/questions';
 import { useHistory } from 'react-router-dom';
 import Image from '../components/what-gift/Image';
-import { ReactComponent as Box } from '../styles/closedBox.svg';
 import Conveyer from '../components/what-gift/Conveyer';
 
 function WhatgiftPage() {
@@ -15,7 +14,6 @@ function WhatgiftPage() {
   const type=useRef(0); //type of Q
   const index=useRef(1); //Index of questions.json
   const [answers,setAnswers]=useState([]);
-  const [clicked,setClicked]=useState(0);
   const ansClicked=useRef(false);
   const qNum=useRef(12);
   const history=useHistory();
@@ -23,16 +21,6 @@ function WhatgiftPage() {
   const onClick=(e)=>{
     ansClicked.current=true;
     setAnswers([...answers,e.target.name]); //or e.target.innerText
-  
-    //test: transfer data to server
-    fetch("http://localhost:3000/text", { //text 주소에서 받을 예정
-      method: "post", //통신방법
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(e.target.name), //객체를 보냄
-    });
-
     };
 
   useEffect(()=>{ //answers의 값이 변할 때 실행
@@ -45,13 +33,24 @@ function WhatgiftPage() {
         history.push('/prepare');
       }
       if(type.current===6 || number===6){
-        console.log("finished default Qs");
-        //*TODO: 서버에 answers 정보 보내기
-        const estimate=5;  //서버에서 정보(예측된 타입) 받아와서 넣을 예정 : 
-        //*TODO: 6번 타입일때 어떻게 처리할지 생각해봐야함
-        goSubType(estimate);
+        console.log("DATA->SERVER");
+
+        fetch("http://localhost:3000/data2server", { //text 주소에서 받을 예정
+          method: "post", //통신방법
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({answer: answers}) //객체를 보냄
+        }).then((res)=>res.json()).then((json)=>{
+          console.log(json);
+          console.log(typeof(json.text));
+          goSubType(Number(json.text));
+          console.log("type change to "+type.current);
+           setNumber((prevNum)=>prevNum+1);
+        });
+      }else {
+        setNumber((prevNum)=>prevNum+1);
       }
-      setNumber((prevNum)=>prevNum+1);
     }
     ansClicked.current=false;
   },[answers]);
