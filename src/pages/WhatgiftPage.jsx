@@ -15,7 +15,7 @@ function WhatgiftPage() {
   const index=useRef(1); //Index of questions.json
   const [answers,setAnswers]=useState([]);
   const ansClicked=useRef(false);
-  const qNum=useRef(12);
+  const qNum=useRef(10);
   const history=useHistory();
   const Percent = (number-1)/qNum.current;
   const [result,setResult]=useState(0);
@@ -43,18 +43,20 @@ function WhatgiftPage() {
 
       if(number===qNum.current){
         console.log("here");
-        if(test){
-          setResult(32);
-        }
-        else data2server(true);
+        // if(test){
+        //   setResult(12);
+        // }
+        // else 
+        data2server(true);
       }
-      if(type.current===6 || number===6){
-        if(test){
-          goSubType(3);
-          console.log("type change to "+type.current);
-          setNumber((prevNum)=>prevNum+1);
-        }
-        else  data2server();
+      if(number===5){
+        // if(test){
+        //   goSubType(1);
+        //   console.log("type change to "+type.current);
+        //   setNumber((prevNum)=>prevNum+1);
+        // }
+        // else
+         data2server();
 
       }else {
         setNumber((prevNum)=>prevNum+1);
@@ -76,7 +78,7 @@ function WhatgiftPage() {
       console.log(json);
       console.log(typeof(json.text));
       if(final){
-        setResult(Number(json.text))
+        setResult(Number(json.text));
       }
       else{
         goSubType(Number(json.text));
@@ -96,10 +98,8 @@ function WhatgiftPage() {
 
   const makeQuestion=(q)=>{ //질문에 따라 나타나는 화면 결정
     if(q.opNum===2){
-      let filename='test.png';
-      if (type.current===0){
-        filename=''+q.id+'.png'; //(picture) or png(sketch)
-      }
+      const filename=''+q.type+q.id+'.png'; //(picture) or png(sketch)
+      
       return (
         <>
         <Image height='190' filename={'question_img/'+filename}/>
