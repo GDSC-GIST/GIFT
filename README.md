@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# 선물취향 테스트 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align = 'center'>
+  <br>
+  #이미지 넣기 
+  <br>
+</p>
 
-## Available Scripts
+목차 
 
-In the project directory, you can run:
+## 프로젝트 소개 
 
-### `npm start`
+<p align = 'justify'>
+이런 선물은 어떤가요? 당신을 위한 ✨취향저격✨ 선물을 추천해드립니다~
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+안녕하세요 여러분! GDSC GIST 선물요정 팀입니다.
+GDSC 선물요정 팀에서 선물 취향 테스트를 만들어 여러분들께도 공유하고자 합니다!
+소중한 친구, 연인, 가족들에게 고마움을 표현하고 싶을 때, 여러분은 어떤 것을 선물하시나요? 
+받는 사람이 마음에 들고, 기억에 남는 선물을 하고 싶은데 어떤 걸 줘야할지 
+매번 고민하는 것에 지치진 않으셨나요? 그래서 여러분들의 고민을 줄여드리고자
+선물 취향 테스트를 준비했습니다! 소중한 사람들에게 심리테스트인척 링크를 보내 취향을 파악해보세요! 
+간단한 테스트로 소중한 사람의 취향을 파악하고 의미있는 선물을 할 수 있어요 ㅎㅎ!
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align = 'center'>
 
-### `npm test`
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+## 기술 스택
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| React   |  Node   |
+| :------: | :-----: |
+| ![react] | ![node] |
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 구현 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 기능 1
 
-### `npm run eject`
+### 기능 2
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 기능 3
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 기능 4
