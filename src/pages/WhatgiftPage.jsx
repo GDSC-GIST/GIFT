@@ -15,7 +15,7 @@ function WhatgiftPage() {
   const index=useRef(1); //Index of questions.json
   const [answers,setAnswers]=useState([]);
   const ansClicked=useRef(false);
-  const qNum=useRef(12);
+  const qNum=useRef(10);
   const history=useHistory();
   const Percent = (number-1)/qNum.current;
   const [result,setResult]=useState(0);
@@ -49,7 +49,7 @@ function WhatgiftPage() {
         // else 
         data2server(true);
       }
-      if(number===6){
+      if(number===5){
         // if(test){
         //   goSubType(1);
         //   console.log("type change to "+type.current);
