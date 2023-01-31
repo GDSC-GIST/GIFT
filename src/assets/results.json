@@ -1,0 +1,169 @@
+[
+    {
+        "typeIndex":{
+            "1":1,
+            "2":7,
+            "3":11,
+            "4":15,
+            "5":20
+        }
+    },
+    {
+        "id":10,
+        "name": "스포츠",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":11,
+        "name": "뷰티/패션",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":12,
+        "name": "문구",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":13,
+        "name": "장난감/게임",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":14,
+        "name": "커플상품",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":15,
+        "name": "도서",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+
+    {
+        "id":20,
+        "name": "식사 기프티콘",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":21,
+        "name": "카페 기프티콘",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":22,
+        "name": "음식",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":23,
+        "name": "건강식품",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+
+    {
+        "id":30,
+        "name": "건강가전",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":31,
+        "name": "미용가전",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":32,
+        "name": "주방가전",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":33,
+        "name": "디지털",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":40,
+        "name": "인테리어",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":41,
+        "name": "피규어/굿즈",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":42,
+        "name": "꽃/식믈",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":43,
+        "name": "장신구",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":44,
+        "name": "쓸데없지만 재미있는 선물",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":50,
+        "name": "영화",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":51,
+        "name": "전시회",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":52,
+        "name": "연주회",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":53,
+        "name": "액티비티",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":54,
+        "name": "식사권",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":55,
+        "name": "숙박권",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":56,
+        "name": "축제장비",
+        "content":["~~한 당신에게는 식물이 어울려요","식물에는 무슨 식물, 무슨 식물이 있어요"],
+        "link":"https://gift.kakao.com/page/4137"
+    }
+]
