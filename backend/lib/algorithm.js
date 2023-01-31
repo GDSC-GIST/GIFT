@@ -29,13 +29,6 @@ export function get_category(answers) {
       [5, 0, 5, 5, 0],
       [4, 4, 0, 0, 9],
     ],
-    [
-      // 6. 특별
-      [0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0],
-    ],
   ];
   const int_ans = answers.map((str) => {
     return parseInt(str, 10);

@@ -45,7 +45,7 @@ app.post("/category_process", function (req, res) {
 // result process
 app.post("/data2server", function (req, res) {
   var array = req.body.answer;
-  if (array.length == 6) {
+  if (array.length == 5) {
     const index = algorithm.get_category(array);
     global.category_index = index;
     console.log(index);
@@ -56,7 +56,7 @@ app.post("/data2server", function (req, res) {
   } else {
     const index = category_index;
     console.log("big category is " + index);
-    array = req.body.answer.slice(6);
+    array = req.body.answer.slice(5);
     var result = 0;
     switch (index) {
       case 1:
