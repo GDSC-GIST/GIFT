@@ -5,6 +5,7 @@ import Share from '../components/result/Share';
 import Image from '../components/what-gift/Image';
 import { useParams } from 'react-router-dom';
 import results from '../assets/results.json';
+import give_gift from '../assests/give_gift.png';
 
 const Container = styled.div`
     display: flex;
@@ -24,13 +25,13 @@ const Result = styled.div`
     padding :2% 0;
 `;
 
-const Horizontal = styled.div`
-    width: 100%;
-    border-bottom: 1px solid #aaa;
-    lineHeight: 0.1em;
-    margin: 10px 0 0;
-
+const ButtonIcon= styled.img`
+  width : 48px;
+  height : 48px;
+  border-radius: 24px;
 `;
+
+
 
 
 function ResultPage(props) {    
@@ -44,7 +45,7 @@ function ResultPage(props) {
         <>
         <Container>
         <Result>
-            <Horizontal /><Horizontal />
+        <br />
             <h2>당신을 위한 선물은</h2>
             <h1>"{results[index].name}"</h1>
             <Image height='215' filename={img} ></Image>
@@ -56,7 +57,7 @@ function ResultPage(props) {
   
             <h4> 카카오톡 선물하기 </h4>
             <button onClick = {() => window.open(results[index].link,
-            '_blank')}> 카카오톡 선물하기 </button>
+            '_blank')}> <ButtonIcon src={give_gift}></ButtonIcon> </button>
             <br />위의 선물들이 마음에 든다면?
             <h4> 내 결과 공유하기 </h4>
             <Share /> <br />
