@@ -39,25 +39,25 @@ function WhatgiftPage() {
     if (ansClicked.current) {
       if (number === qNum.current) {
         console.log("question finished");
-        // if(test){
-        //   setResult(12);
-        // }
-        // else{
+        if(test){
+          setResult(52);
+        }
+        else{
         data2server(true);
-        // }
+        }
       }
 
       index.current += 1;
 
       if (number === 5) {
-        // if(test){
-        //   goSubType(1);
-        //   console.log("type change to "+type.current);
-        //   setNumber((prevNum)=>prevNum+1);
-        // }
-        // else{
+        if(test){
+          goSubType(5);
+          console.log("type change to "+type.current);
+          setNumber((prevNum)=>prevNum+1);
+        }
+        else{
         data2server();
-      // }
+        }
       } else {
         setNumber((prevNum) => prevNum + 1);
       }

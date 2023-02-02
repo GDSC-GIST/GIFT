@@ -5,7 +5,7 @@ import Share from '../components/result/Share';
 import Image from '../components/what-gift/Image';
 import { useParams } from 'react-router-dom';
 import results from '../assets/results.json';
-import give_gift from '../assests/give_gift.png';
+import give_gift from '../assets/give_gift.png';
 
 const Container = styled.div`
     display: flex;
