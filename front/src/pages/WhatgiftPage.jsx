@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import ProgressBar from "../components/what-gift/ProgressBar";
 import Question from "../components/what-gift/Question";
 import Answer from "../components/what-gift/Answer";
 import questions from "../assets/questions";
@@ -27,7 +26,6 @@ function WhatgiftPage() {
   };
 
   useEffect(() => {
-    console.log("resultEffect");
     if (ansClicked.current) {
       console.log("gotoprepare");
       history.push("/prepare/" + result);
@@ -39,24 +37,27 @@ function WhatgiftPage() {
     console.log(answers);
 
     if (ansClicked.current) {
-      index.current += 1;
-
       if (number === qNum.current) {
-        console.log("here");
+        console.log("question finished");
         // if(test){
         //   setResult(12);
         // }
-        // else
+        // else{
         data2server(true);
+        // }
       }
+
+      index.current += 1;
+
       if (number === 5) {
         // if(test){
         //   goSubType(1);
         //   console.log("type change to "+type.current);
         //   setNumber((prevNum)=>prevNum+1);
         // }
-        // else
+        // else{
         data2server();
+      // }
       } else {
         setNumber((prevNum) => prevNum + 1);
       }
@@ -77,8 +78,7 @@ function WhatgiftPage() {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
-        console.log(typeof json.text);
+        console.log(json); //typeof json.text == Number 
         if (final) {
           setResult(Number(json.text));
         } else {
