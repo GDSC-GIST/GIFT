@@ -244,7 +244,7 @@ export function category4(answers) {
   return 40 + sum.indexOf(Math.max(...sum));
 }
 
-function category5(answers) {
+export function category5(answers) {
   // 문화
   const weights = [
     // 0 영화, 1 전시회, 2 연주회, 3 액티비티, 4 식사권, 5 숙박권, 6 축제장비

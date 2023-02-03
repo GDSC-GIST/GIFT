@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.36285ec5.css",
-    "main.js": "/static/js/main.f463659f.js",
+    "main.js": "/static/js/main.fbbbb900.js",
     "static/media/52.png": "/static/media/52.d9427a164e88be50c2ef.png",
     "static/media/24.png": "/static/media/24.85d08757ae4eba013f77.png",
     "static/media/04.png": "/static/media/04.910b88a5a332ea467472.png",
@@ -38,15 +38,16 @@
     "static/media/10.png": "/static/media/10.e91aee2d134ea2a91ea5.png",
     "static/media/56.png": "/static/media/56.53b109f8e74b5645d545.png",
     "static/media/30.png": "/static/media/30.2d2a9b127ccbebf63f41.png",
+    "static/media/give_gift.png": "/static/media/give_gift.193e21e806cf1bb27ecb.png",
     "static/media/gift.png": "/static/media/gift.11ce4f860605fd74239f.png",
     "index.html": "/index.html",
     "static/media/defaultBox.svg": "/static/media/defaultBox.82b981bf4046f5b1bc6f3f0663848eb9.svg",
     "static/media/openBox.svg": "/static/media/openBox.5bc78adf6467b4e375bb170277364f97.svg",
     "main.36285ec5.css.map": "/static/css/main.36285ec5.css.map",
-    "main.f463659f.js.map": "/static/js/main.f463659f.js.map"
+    "main.fbbbb900.js.map": "/static/js/main.fbbbb900.js.map"
   },
   "entrypoints": [
     "static/css/main.36285ec5.css",
-    "static/js/main.f463659f.js"
+    "static/js/main.fbbbb900.js"
   ]
 }

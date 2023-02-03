@@ -37,7 +37,7 @@ function WhatgiftPage() {
   useEffect(() => {
     //answers의 값이 변할 때 실행
     console.log(answers);
-
+    console.log("qnum", qNum.current);
     if (ansClicked.current) {
       index.current += 1;
 
@@ -67,7 +67,7 @@ function WhatgiftPage() {
   const data2server = (final = false) => {
     console.log("DATA->SERVER");
 
-    fetch("http://localhost:3000/data2server", {
+    fetch("data2server", {
       //data2server 주소에서 받을 예정
       method: "post", //통신방법
       headers: {
