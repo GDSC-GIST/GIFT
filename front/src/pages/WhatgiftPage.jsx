@@ -18,8 +18,6 @@ function WhatgiftPage() {
   const Percent = (number - 1) / qNum.current;
   const [result, setResult] = useState(0);
 
-  const test = useRef(true);
-
   const onClick = (e) => {
     ansClicked.current = true;
     setAnswers([...answers, e.target.name]); //or e.target.innerText
@@ -39,25 +37,13 @@ function WhatgiftPage() {
     if (ansClicked.current) {
       if (number === qNum.current) {
         console.log("question finished");
-        if(test){
-          setResult(52);
-        }
-        else{
         data2server(true);
-        }
       }
 
       index.current += 1;
 
       if (number === 5) {
-        if(test){
-          goSubType(5);
-          console.log("type change to "+type.current);
-          setNumber((prevNum)=>prevNum+1);
-        }
-        else{
         data2server();
-        }
       } else {
         setNumber((prevNum) => prevNum + 1);
       }
@@ -78,7 +64,7 @@ function WhatgiftPage() {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json); //typeof json.text == Number 
+        console.log(json); //typeof json.text == Number
         if (final) {
           setResult(Number(json.text));
         } else {

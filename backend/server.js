@@ -23,23 +23,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/node_modules", express.static(path.join(__dirname, "/node_modules")));
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "/front/build")));
+app.use(express.static(path.join(__dirname, "../front/build")));
 
 app.get("/", (req, res) => {
   var _url = req.url;
   var d = url.parse(_url, true).query;
   console.log(d);
-  res.sendFile(__dirname + "/front/build/index.html");
+  res.sendFile(__dirname + "../front/build/index.html");
   // var html=start.HTML();
   // res.send(html);
-});
-
-// category process
-app.post("/category_process", function (req, res) {
-  const array = req.body.answer;
-  const index = algorithm.get_category(array);
-  global.category_index = index;
-  res.send(index);
 });
 
 // result process
