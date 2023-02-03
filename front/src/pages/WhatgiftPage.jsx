@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import ProgressBar from "../components/what-gift/ProgressBar";
 import Question from "../components/what-gift/Question";
 import Answer from "../components/what-gift/Answer";
 import questions from "../assets/questions";
@@ -27,7 +26,6 @@ function WhatgiftPage() {
   };
 
   useEffect(() => {
-    console.log("resultEffect");
     if (ansClicked.current) {
       console.log("gotoprepare");
       history.push("/prepare/" + result);
@@ -37,26 +35,29 @@ function WhatgiftPage() {
   useEffect(() => {
     //answers의 값이 변할 때 실행
     console.log(answers);
-
+    console.log("qnum", qNum.current);
     if (ansClicked.current) {
+      if (number === qNum.current) {
+        console.log("question finished");
+        if(test){
+          setResult(52);
+        }
+        else{
+        data2server(true);
+        }
+      }
+
       index.current += 1;
 
-      if (number === qNum.current) {
-        console.log("here");
-        // if(test){
-        //   setResult(12);
-        // }
-        // else
-        data2server(true);
-      }
       if (number === 5) {
-        // if(test){
-        //   goSubType(1);
-        //   console.log("type change to "+type.current);
-        //   setNumber((prevNum)=>prevNum+1);
-        // }
-        // else
+        if(test){
+          goSubType(5);
+          console.log("type change to "+type.current);
+          setNumber((prevNum)=>prevNum+1);
+        }
+        else{
         data2server();
+        }
       } else {
         setNumber((prevNum) => prevNum + 1);
       }
@@ -67,7 +68,7 @@ function WhatgiftPage() {
   const data2server = (final = false) => {
     console.log("DATA->SERVER");
 
-    fetch("http://localhost:3000/data2server", {
+    fetch("data2server", {
       //data2server 주소에서 받을 예정
       method: "post", //통신방법
       headers: {
@@ -77,8 +78,7 @@ function WhatgiftPage() {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
-        console.log(typeof json.text);
+        console.log(json); //typeof json.text == Number 
         if (final) {
           setResult(Number(json.text));
         } else {
