@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import results from "../assets/results.json";
 import give_gift from "../assets/give_gift.png";
 
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
