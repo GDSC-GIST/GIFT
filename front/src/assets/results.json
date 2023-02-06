@@ -106,14 +106,14 @@
     {
         "id":40,
         "name": "인테리어",
-        "content":["한 번 쓰고 사라질 선물보단 실물을 중시하는 당신에게는 인테리어 용품이 어울려요","인테리어에는 무드등, 향초가 있어요"],
-        "link":"https://gift.kakao.com/search/result?query=%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4&searchType=typing_keyword"
+        "content":["한 번 쓰고 사라질 선물보단 오래오래 사용할 수 있는 실물을 중시하는 당신에게는 인테리어 가구와 소품이 어울려요","인테리어 선물에는 쿠션, 의자가 있어요"],
+        "link":"https://store.ohou.se/ranks"
     },
     {
         "id":41,
-        "name": "피규어/굿즈",
-        "content":["귀여운걸 좋아하고 00덕후인 당신은 굿즈 선물이 어울려요","굿즈 선물에는 '포스터', '피규어' 등이 있어요"],
-        "link":"https://gift.kakao.com/page/4137"
+        "name": "굿즈",
+        "content":["귀여운걸 좋아하고 00덕후인 당신에게는 굿즈 선물이 어울려요","굿즈 선물에는 피규어, 단행본 등이 있어요"],
+        "link":"https://gift.kakao.com/search/result?query=%EA%B5%BF%EC%A6%88&searchType=typing_keyword"
     },
     {
         "id":42,
@@ -123,15 +123,15 @@
     },
     {
         "id":43,
-        "name": "장신구",
-        "content":["귀여운 선물을 좋아하는 당신에게는 장신구가 어울려요","장신구에는 반지, 반지 수납함이 있어요"],
-        "link":"https://gift.kakao.com/search/result?query=%EC%9E%A5%EC%8B%9D&searchType=typing_keyword"
+        "name": "장식품",
+        "content":["귀여운 선물을 좋아하는 당신에게는 장식품이 어울려요","장식품에는 소품 트레이, 드림캐쳐가 있어요"],
+        "link":"https://gift.kakao.com/page/15550"
     },
     {
         "id":44,
         "name": "쓸데없지만 재미있는 선물",
         "content":["재미를 추구하는 당신에게는 쓸데없지만 재미있는 선물이 어울려요","쓸데없지만 재미있는 선물에는 반려돌, 랜덤박스가 있어요"],
-        "link":"https://gift.kakao.com/search/result?query=%EC%93%B8%EB%8D%B0%EC%97%86%EB%8A%94%EC%84%A0%EB%AC%BC&searchType=suggest_keyword"
+        "link":"https://gift.kakao.com/page/8566"
     },
     {
         "id":50,
