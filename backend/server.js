@@ -79,7 +79,7 @@ app.post("/data2server", function (req, res) {
 });
 
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "/front/build/index.html"));
+  res.sendFile(path.join(__dirname, "../front/build/index.html"));
 });
 
 /*app.use(express.static("public"));
