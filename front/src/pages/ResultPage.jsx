@@ -36,6 +36,7 @@ const Content = styled.div`
     display: flex;
     white-space: pre-line;
     font-size : 14px;
+    margin : 0 20px;
 `;
 
 function ResultPage(props) {
