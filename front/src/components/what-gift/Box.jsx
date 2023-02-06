@@ -10,6 +10,8 @@ const Svg = styled.svg`
     }
 `;
 
+const colors=["#FF6464","#3391FF","#FFE03B","#42E870","#C69256"]
+
 function Box({type}){
     if(type===0){
         return(
@@ -22,7 +24,7 @@ function Box({type}){
     else{
         return(
             <Svg viewBox="0 0 72 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="72" height="60" fill="current"/>
+                <rect width="72" height="60" fill={colors[type-1]}/>
             </Svg>
         );
     }

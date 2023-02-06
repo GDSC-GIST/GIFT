@@ -19,9 +19,7 @@ const Container=styled.div`
     }
 `;
 
-
 const position=[40,93,146,199,252,305,358,411,464,517,570,623];
-const colors=["#FF6464","#3391FF","#FFE03B","#42E870","#C69256"]
 
 function Conveyer({type,percent}){
     console.log(percent, type);
