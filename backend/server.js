@@ -34,21 +34,13 @@ app.get("/", (req, res) => {
   // res.send(html);
 });
 
-// category process
-app.post("/category_process", function (req, res) {
-  const array = req.body.answer;
-  const index = algorithm.get_category(array);
-  global.category_index = index;
-  res.send(index);
-});
-
 // result process
 app.post("/data2server", function (req, res) {
   var array = req.body.answer;
-  if (array.length == 5) {
+  if (array.length < 6) {
     const index = algorithm.get_category(array);
     global.category_index = index;
-    console.log(index);
+    console.log("server by index is " + index);
     const index_json = {
       text: index,
     };
@@ -78,7 +70,7 @@ app.post("/data2server", function (req, res) {
         result = 99;
         break;
     }
-    console.log(result);
+    console.log("server by result is " + result);
     const result_json = {
       text: result,
     };
@@ -86,7 +78,11 @@ app.post("/data2server", function (req, res) {
   }
 });
 
-app.use(express.static("public"));
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "../front/build/index.html"));
+});
+
+/*app.use(express.static("public"));
 app.use(function (req, res, next) {
   res.status(404);
   res.send(
@@ -98,7 +94,7 @@ app.use(function (req, res, next) {
       " 을 이 서버에서 찾을 수 없습니다..</p><hr>" +
       "</body></html>"
   );
-});
+});*/
 
 app.listen(PORT, () => {
   console.log(`Express server running on 3000`);
