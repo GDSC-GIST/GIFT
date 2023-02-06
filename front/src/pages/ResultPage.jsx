@@ -32,6 +32,12 @@ const ButtonIcon = styled.img`
   border-radius: 24px;
 `;
 
+const Content = styled.div`
+    display: flex;
+    white-space: pre-line;
+    font-size : 14px;
+`;
+
 function ResultPage(props) {
   results = results;
   const { resultID } = useParams();
@@ -47,8 +53,10 @@ function ResultPage(props) {
           <h2>당신을 위한 선물은</h2>
           <h1>"{results[index].name}"</h1>
           <Image height="215" filename={img}></Image>
+          <Content>
           {results[index].content[0]} <br />
           {results[index].content[1]} <br />
+          </Content>
           당신을 위한 선물을 구매하고 싶다면
           <br />
           아래 버튼을 눌러주세요 <br />
