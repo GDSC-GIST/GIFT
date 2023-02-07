@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
 
 const Footer = styled.footer`
   position : fixed;
@@ -26,16 +25,17 @@ const Button = styled.button`
   -webkit-box-pack : center;
   justify-content : space-evenly;
   font-family: 'Gowun Dodum', sans-serif;
+  color : white;
 `;
 
 export default function Restart(
     ) {
     return (
       <Footer>
-      <Button>
-      <Link to='/' style={{textDecoration : 'none', color: 'white'}}>
+      <Button onClick={ () => {
+        window.location.href ='/';
+    }}>
         다시 검사하기
-      </Link>
       </Button></Footer>
     );
 }
