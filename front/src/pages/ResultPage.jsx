@@ -46,7 +46,9 @@ const Result = styled.div`
   align-items: center;
   background-size: cover;
   background-color: #fff8f0;
-  margin: 4% 4% 0;
+  margin: 5%;
+  line-height: 1.8;
+  font-size: 1.125rem;
 `;
 
 const ButtonIcon = styled.img`
@@ -56,10 +58,13 @@ const ButtonIcon = styled.img`
 `;
 
 const Content = styled.div`
+    position : relative;
     display: flex;
     white-space: pre-line;
-    font-size : 14px;
-    margin : 0 20px;
+    margin: 5% 5% 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 7% 5%;
+
 `;
 
 function ResultPage(props) {
@@ -81,9 +86,7 @@ function ResultPage(props) {
           {results[index].content[0]} <br />
           {results[index].content[1]} <br />
           </Content><br />
-          당신을 위한 선물을 구매하고 싶다면
-          <br />
-          아래 버튼을 눌러주세요 <br />
+          당신을 위한 선물을 구매하고 싶다면?
           <h4> 카카오톡 선물하기 </h4>
           <button onClick={() => window.open(results[index].link, "_blank")}>
             {" "}
