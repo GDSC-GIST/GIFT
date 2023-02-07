@@ -18,11 +18,12 @@ const Prepare = styled.div`
   -webkit-box-pack : center;
   -webkit-box-align : center;
   align-items : center;
-  height: 90vh;
+  height: 100vh;
   max-width: 500px;
   width: 100%;
   filter: drop-shadow(transparent 0px 0px 0px);
   border-radius: 0px;
+  margin : 0 auto;
 `;
 
 function PreparePage() {
