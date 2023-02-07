@@ -4,7 +4,7 @@ import Box from "./Box";
 const Svg = styled.svg`
     display: flex; 
     margin: 0px auto;
-    max-width: 680px; 
+    max-width: 550px; 
     padding: 0 20px;
     @media screen and (max-width: 650px) {
         width: 350px; 
@@ -14,9 +14,6 @@ const Svg = styled.svg`
 const Container=styled.div`
     margin-top:70px;
     text-align: center;
-    @media screen and (max-width: 650px) {
-        margin-top: 120px; 
-    }
 `;
 
 const position=[40,93,146,199,252,305,358,411,464,517,570,623];

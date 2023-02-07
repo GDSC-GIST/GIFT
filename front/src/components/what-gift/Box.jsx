@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Svg = styled.svg`
     display: flex; 
     margin: 0px auto;
-    max-width: 72px;
+    max-width: 60px;
     @media screen and (max-width: 650px) {
         max-width: 36px; 
     }
