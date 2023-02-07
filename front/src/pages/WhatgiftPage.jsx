@@ -27,16 +27,14 @@ function WhatgiftPage() {
     console.log(answers);
     console.log("qnum", qNum.current);
     if (ansClicked.current) {
+      index.current += 1;
       if (number === qNum.current) {
         console.log("question finished");
         data2server(true);
       }
-
-      index.current += 1;
-
-      if (number === 5) {
+      else if (number === 5) {  
         data2server();
-      } else {
+      } else { 
         setNumber((prevNum) => prevNum + 1);
       }
     }
@@ -81,8 +79,6 @@ function WhatgiftPage() {
       const filename = "" + q.type + q.id + ".png";
       const imgHeight=window.innerWidth> 350?180:120;
 
-      console.log("h",imgHeight);
-      console.log(window);
       return (
         <>
           <Image height={imgHeight} filename={"question_img/" + filename} />
