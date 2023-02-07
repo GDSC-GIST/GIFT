@@ -14,7 +14,7 @@ const ButtonWrapper = styled.div`
     grid-column-gap:8px;
     justify-content: center;
     align-items: center;
-    margin-bottom : 16px;
+    margin-bottom : 50%;
 `;
 
 const Box = styled.div`
