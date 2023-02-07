@@ -16,19 +16,11 @@ function WhatgiftPage() {
   const qNum = useRef(10);
   const history = useHistory();
   const Percent = (number - 1) / qNum.current;
-  const [result, setResult] = useState(0);
 
   const onClick = (e) => {
     ansClicked.current = true;
     setAnswers([...answers, e.target.name]); //or e.target.innerText
   };
-
-  useEffect(() => {
-    if (ansClicked.current) {
-      console.log("gotoprepare");
-      history.push("/prepare/" + result);
-    }
-  }, [result]);
 
   useEffect(() => {
     //answers의 값이 변할 때 실행
@@ -66,7 +58,8 @@ function WhatgiftPage() {
       .then((json) => {
         console.log(json); //typeof json.text == Number
         if (final) {
-          setResult(Number(json.text));
+          // console.log("gotoprepare");
+          history.push("/prepare/" + json.text);
         } else {
           goSubType(Number(json.text));
           console.log("type change to " + type.current);
