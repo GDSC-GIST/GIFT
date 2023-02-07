@@ -6,18 +6,29 @@ import lottie  from '../assets/lottie';
 
 
 const Prepare = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin : 0 auto;
+  position : relative;
+  background: #fff8f0;
+  flex : 1;
+  border: 0px solid transparent;
+  overflow : hidden auto;
+  display: flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-pack : center;
+  -webkit-box-align : center;
+  align-items : center;
+  height: 90vh;
+  max-width: 500px;
+  width: 100%;
+  filter: drop-shadow(transparent 0px 0px 0px);
+  border-radius: 0px;
 `;
 
 function PreparePage() {
     const {resultID}=useParams(); //type: string
     return (
         <Prepare>
-            <br /><br /><br />
         <h2>당신의 선물이 준비되었습니다!</h2>
         <h3>{'>'} 클릭하여 선물 열기 {'<'}</h3>
         <Link to={'/result/'+resultID}>
