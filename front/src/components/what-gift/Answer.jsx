@@ -13,8 +13,7 @@ const StyledButton = styled.button`
   padding: 1rem 2.5rem;
   margin: 32px auto;
   
-
-  height: 75px;
+  height: 70px;
   width: 360px;
   font-size: 1rem;
   font-family: 'Gowun Dodum', sans-serif;
@@ -22,6 +21,11 @@ const StyledButton = styled.button`
   background: #fff8f0;
   &:active {
     background: #ff6464;
+  }@media screen and (max-height: 600px) {
+    margin: 16px auto; 
+  }
+  @media screen and (max-width: 350px){
+      width: 250px; 
   }
 `;
 

@@ -40,7 +40,7 @@ function WhatgiftPage() {
         setNumber((prevNum) => prevNum + 1);
       }
     }
-    // ansClicked.current=false;
+    ansClicked.current=false;
   }, [answers]);
 
   const data2server = (final = false) => {
@@ -78,11 +78,14 @@ function WhatgiftPage() {
   const makeQuestion = (q) => {
     //질문에 따라 나타나는 화면 결정
     if (q.opNum === 2) {
-      const filename = "" + q.type + q.id + ".png"; //(picture) or png(sketch)
+      const filename = "" + q.type + q.id + ".png";
+      const imgHeight=window.innerWidth> 350?180:120;
 
+      console.log("h",imgHeight);
+      console.log(window);
       return (
         <>
-          <Image height="190" filename={"question_img/" + filename} />
+          <Image height={imgHeight} filename={"question_img/" + filename} />
           <Answer onClick={onClick} name="0">
             {q.options[0]}
           </Answer>

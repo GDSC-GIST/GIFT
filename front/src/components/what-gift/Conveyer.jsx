@@ -5,28 +5,34 @@ const Svg = styled.svg`
     display: flex; 
     margin: 0px auto;
     max-width: 550px; 
-    padding: 0 20px;
-    @media screen and (max-width: 650px) {
+    padding: 0 5%;
+    @media screen and (max-width: 650px),screen and (max-height: 600px) {
         width: 350px; 
+    }
+    @media screen and (max-width: 350px){
+        width: 250px; 
     }
 `;
 
 const Container=styled.div`
-    margin-top:70px;
+    margin-top: 70px;
     text-align: center;
+    @media screen and (max-height: 600px) {
+        margin-top: 40px; 
+    }
 `;
 
-const position=[40,93,146,199,252,305,358,411,464,517,570,623];
+const position=[55,110,165,220,275,330,395,450,505,560,615];
 
 function Conveyer({type,percent}){
     console.log(percent, type);
-    const num=Math.round(Number(percent)*12);
+    const num=Math.round(Number(percent)*11);
     console.log(num);
     const state=[];
     for(var i=0;i<num;i++){
         state.push({id: i, fill: "#959595"});
     }
-    for(var i=num;i<12;i++){
+    for(var i=num;i<11;i++){
         state.push({id: i, fill: "#ECECEC"});
     }
     const circleList=state.map(x => (<circle key={x.id} cx="10" cy="10" r="10" transform={"matrix(0 1 1 0 "+position[x.id]+" 0)"} fill={x.fill}/>));

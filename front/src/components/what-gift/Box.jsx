@@ -5,7 +5,7 @@ const Svg = styled.svg`
     display: flex; 
     margin: 0px auto;
     max-width: 60px;
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 650px),screen and (max-height: 600px) {
         max-width: 36px; 
     }
 `;
