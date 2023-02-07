@@ -16,19 +16,11 @@ function WhatgiftPage() {
   const qNum = useRef(10);
   const history = useHistory();
   const Percent = (number - 1) / qNum.current;
-  const [result, setResult] = useState(0);
 
   const onClick = (e) => {
     ansClicked.current = true;
     setAnswers([...answers, e.target.name]); //or e.target.innerText
   };
-
-  useEffect(() => {
-    if (ansClicked.current) {
-      console.log("gotoprepare");
-      history.push("/prepare/" + result);
-    }
-  }, [result]);
 
   useEffect(() => {
     //answers의 값이 변할 때 실행
@@ -48,7 +40,7 @@ function WhatgiftPage() {
         setNumber((prevNum) => prevNum + 1);
       }
     }
-    // ansClicked.current=false;
+    ansClicked.current=false;
   }, [answers]);
 
   const data2server = (final = false) => {
@@ -66,7 +58,8 @@ function WhatgiftPage() {
       .then((json) => {
         console.log(json); //typeof json.text == Number
         if (final) {
-          setResult(Number(json.text));
+          // console.log("gotoprepare");
+          history.push("/prepare/" + json.text);
         } else {
           goSubType(Number(json.text));
           console.log("type change to " + type.current);
@@ -85,11 +78,14 @@ function WhatgiftPage() {
   const makeQuestion = (q) => {
     //질문에 따라 나타나는 화면 결정
     if (q.opNum === 2) {
-      const filename = "" + q.type + q.id + ".png"; //(picture) or png(sketch)
+      const filename = "" + q.type + q.id + ".png";
+      const imgHeight=window.innerWidth> 350?180:120;
 
+      console.log("h",imgHeight);
+      console.log(window);
       return (
         <>
-          <Image height="190" filename={"question_img/" + filename} />
+          <Image height={imgHeight} filename={"question_img/" + filename} />
           <Answer onClick={onClick} name="0">
             {q.options[0]}
           </Answer>
