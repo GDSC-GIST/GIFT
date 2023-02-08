@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Svg = styled.svg`
     display: flex; 
-    margin: 0px auto;
+    margin: 4px auto;
     max-width: 60px;
     @media screen and (max-width: 650px),screen and (max-height: 600px) {
         max-width: 36px; 
@@ -30,11 +30,13 @@ function Box({type,percent}){
         );
     }
     else if(percent>0.75){
+        return (
         <LSvg viewBox="0 0 76 64" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="2" y="4" width="72" height="60" fill={colors[type-1]}/>
         <rect width="76" height="20" fill={colors[type-1]}/>
         <rect width="76" height="20" fill="black" fill-opacity="0.15"/>
         </LSvg>
+        );
     }
     else {
         return(
