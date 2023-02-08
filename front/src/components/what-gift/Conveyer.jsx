@@ -25,23 +25,21 @@ const Container=styled.div`
 const position=[55,110,165,220,275,330,395,450,505,560,615];
 
 function Conveyer({type,percent}){
-    console.log(percent, type);
-    const num=Math.round(Number(percent)*11);
-    console.log(num);
-    const state=[];
+    const num=Math.round(Number(percent)*10);
+    const state=[{id: 0, fill: "#959595"}];
     for(var i=0;i<num;i++){
-        state.push({id: i, fill: "#959595"});
+        state.push({id: i+1, fill: "#959595"});
     }
-    for(var i=num;i<11;i++){
-        state.push({id: i, fill: "#ECECEC"});
+    for(var i=num;i<10;i++){
+        state.push({id: i+1, fill: "#ECECEC"});
     }
     const circleList=state.map(x => (<circle key={x.id} cx="10" cy="10" r="10" transform={"matrix(0 1 1 0 "+position[x.id]+" 0)"} fill={x.fill}/>));
 
     return(
     <Container>
-        <Box type={type}/>
+        <Box type={type} percent={percent}/>
         <Svg viewBox="0 0 680 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 10C0 4.47715 4.47715 0 10 0H670C675.523 0 680 4.47715 680 10V10C680 15.5228 675.523 20 670 20H10C4.47716 20 0 15.5228 0 10V10Z" fill="#C4C4C4"/>
+            <path d="M0 10C0 4.47715 4.47715 0 10 0H670C675.523 0 680 4.47715 680 10V10C680 15.5228 675.523 20 670 20H10C4.47716 20 0 15.5228 0 10V10Z" fill="#C4C4C4"/>     
             {circleList}
         </Svg>
     </Container>
