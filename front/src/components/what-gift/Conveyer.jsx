@@ -27,10 +27,10 @@ const position=[55,110,165,220,275,330,395,450,505,560,615];
 function Conveyer({type,percent}){
     const num=Math.round(Number(percent)*11);
     const state=[];
-    for(var i=0;i<num;i++){
+    for(var i=0;i<=num;i++){
         state.push({id: i, fill: "#959595"});
     }
-    for(var i=num;i<11;i++){
+    for(var i=num+1;i<11;i++){
         state.push({id: i, fill: "#ECECEC"});
     }
     const circleList=state.map(x => (<circle key={x.id} cx="10" cy="10" r="10" transform={"matrix(0 1 1 0 "+position[x.id]+" 0)"} fill={x.fill}/>));
