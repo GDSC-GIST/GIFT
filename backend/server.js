@@ -37,6 +37,7 @@ app.get("/", (req, res) => {
 // result process
 app.post("/data2server", function (req, res) {
   var array = req.body.answer;
+  console.log("we get this answer " + req.body);
   if (array.length < 6) {
     const index = algorithm.get_category(array);
     global.category_index = index;
