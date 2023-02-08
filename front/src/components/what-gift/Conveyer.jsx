@@ -25,9 +25,7 @@ const Container=styled.div`
 const position=[55,110,165,220,275,330,395,450,505,560,615];
 
 function Conveyer({type,percent}){
-    console.log(percent, type);
     const num=Math.round(Number(percent)*11);
-    console.log(num);
     const state=[];
     for(var i=0;i<num;i++){
         state.push({id: i, fill: "#959595"});
@@ -39,7 +37,7 @@ function Conveyer({type,percent}){
 
     return(
     <Container>
-        <Box type={type}/>
+        <Box type={type} percent={percent}/>
         <Svg viewBox="0 0 680 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 10C0 4.47715 4.47715 0 10 0H670C675.523 0 680 4.47715 680 10V10C680 15.5228 675.523 20 670 20H10C4.47716 20 0 15.5228 0 10V10Z" fill="#C4C4C4"/>
             {circleList}
