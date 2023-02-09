@@ -1,5 +1,3 @@
-# README
-
 # 🎁 선물취향 테스트 🎁
 
 <p align="center">
