@@ -2,11 +2,11 @@
 
 # 🎁 선물취향 테스트 🎁
 
-![gift4u.click_(iPhone SE).png](README/gift4u.click_(iPhone_SE).png)
-
-![gift4u.click_(iPhone SE) (1).png](README/gift4u.click_(iPhone_SE)_(1).png)
-
-![gift4u.click_(iPhone SE) (2).png](README/gift4u.click_(iPhone_SE)_(2).png)
+<p align="center">
+  <img src="README/gift4u.click_(iPhone_SE).png" align="center" alt="startPage" width="32%">
+  <img src="README/gift4u.click_(iPhone_SE)_(1).png" align="center" alt="whatgiftPage" width="32%">
+  <img src="README/gift4u.click_(iPhone_SE)_(2).png" align="center" alt="preparePage" width="32%">
+</p>
 
 ### 프로젝트 소개
 
@@ -31,11 +31,11 @@
 
 ### 일러스트레이션
 
-![KakaoTalk_20230118_012515167.png](README/KakaoTalk_20230118_012515167.png)
-
-![KakaoTalk_20230118_012550327.png](README/KakaoTalk_20230118_012550327.png)
-
-![KakaoTalk_20230131_153531609.png](README/KakaoTalk_20230131_153531609.png)
+<p align="center">
+  <img src="README/KakaoTalk_20230118_012515167.png" align="center" alt="game" width="32%">
+  <img src="README/KakaoTalk_20230118_012550327.png" align="center" alt="beauty" width="32%">
+  <img src="README/KakaoTalk_20230131_153531609.png" align="center" alt="exhibition" width="32%">
+</p>
 
 ### 개발 환경
 
