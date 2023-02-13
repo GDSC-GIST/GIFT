@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import styled, {css} from "styled-components";
 import { ReactComponent as Good} from "../../assets/good.svg";
 import { ReactComponent as Bad} from "../../assets/bad.svg";
 
 const sizeStyle=css`
-    width:50px;
-    height:50px;
-    margin: 20px;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
 `;
 const colorStyle=css`
     ${props => {
@@ -53,7 +53,7 @@ function Satisfaction(answers){
     },[state]);
 
     function pushSatisfaction(reaction){
-        fetch("satisfaction", {
+        fetch("resultReaction", {
             method: "post", 
             headers: {
               "content-type": "application/json",
