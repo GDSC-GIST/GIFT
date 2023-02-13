@@ -6,6 +6,7 @@ import Image from "../components/what-gift/Image";
 import { useParams } from "react-router-dom";
 import results from "../assets/results.json";
 import give_gift from "../assets/give_gift.png";
+import Satisfaction from "../components/result/Satisfaction";
 
 
 const Container = styled.div`
@@ -86,6 +87,8 @@ function ResultPage(props) {
           {results[index].content[0]} <br />
           {results[index].content[1]} <br />
           </Content><br />
+          추천한 선물이 마음에 드시나요?<br />
+          <Satisfaction /><br />
           당신을 위한 선물을 구매하고 싶다면?
           <h4> 카카오톡 선물하기 </h4>
           <button onClick={() => window.open(results[index].link, "_blank")}>
