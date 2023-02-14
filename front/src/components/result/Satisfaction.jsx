@@ -42,7 +42,7 @@ const SBad = styled(Bad)`
     ${cursorEvent}
 `;
 
-function Satisfaction(answers){
+function Satisfaction({answers}){
     const [state,setState]=useState(0);
     const [clicked,setClicked]=useState(false);
 
@@ -59,7 +59,7 @@ function Satisfaction(answers){
               "content-type": "application/json",
             },
             body: JSON.stringify({ answer: answers, reaction: reaction }),
-          });
+          }); //reaction 1=good, 2=bad
         setClicked(true);
     };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Lottie from 'lottie-react';
-import { Link,useParams } from 'react-router-dom';
+import { Link,useLocation,useParams } from 'react-router-dom';
 import lottie  from '../assets/lottie';
 
 
@@ -27,12 +27,14 @@ const Prepare = styled.div`
 `;
 
 function PreparePage() {
+    const location=useLocation();
+    let answers=(typeof location.state==='undefined')? [] : location.state.answers;
     const {resultID}=useParams(); //type: string
     return (
         <Prepare>
         <h2>당신의 선물이 준비되었습니다!</h2>
         <h3>{'>'} 클릭하여 선물 열기 {'<'}</h3>
-        <Link to={'/result/'+resultID}>
+        <Link to={{pathname: '/result/'+resultID, state:{answers: answers}}}>
             <Lottie animationData={lottie} />
         </Link>
         

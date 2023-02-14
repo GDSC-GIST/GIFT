@@ -17,7 +17,6 @@ function App(){
       <Route path='/whatgift' component={WhatgiftPage}/> 
       <Route path='/prepare/:resultID' component={PreparePage}/> 
       <Route path='/result/:resultID' component={ResultPage}/>
-      <Route path='/test' component={Motion}/> 
       <Route path='/*' component={ErrorPage}/>      
     </Switch>
     </>
