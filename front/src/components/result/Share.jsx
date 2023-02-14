@@ -13,7 +13,8 @@ const ButtonWrapper = styled.div`
     grid-template-columns: repeat(4, 48px);
     grid-column-gap:8px;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
+    align-items: start;
     margin-bottom : 50%;
 `;
 
