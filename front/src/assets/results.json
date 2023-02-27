@@ -1,0 +1,178 @@
+[
+    {
+        "typeIndex":{
+            "1":1,
+            "2":7,
+            "3":11,
+            "4":15,
+            "5":20
+        }
+    },
+    {
+        "id":10,
+        "name": "스포츠",
+        "content":["스포티한 감각을 지닌 당신!\n날렵하게 어디든 날아갈 준비 되었나요?",
+"스포츠에는 나이키, 아디다스, 언더아머 등이 있어요,\n종류로는 의류와 슈즈, 잡화가 있어서\n다양한 범위에서 선물을 고를 수 있어요!"],
+        "link":"https://gift.kakao.com/brand/category/99"
+    },
+    {
+        "id":11,
+        "name": "뷰티/패션",
+        "content":["당신에게는 더 아름답게 빛날 뷰티/패션을 추천해요.\n 왜냐고요? 당신 참 깔끔해서요. 재미로도, 미학적으로도.",
+"뷰티/패션으로는 향수, 스킨케어, \n메이크업, 주얼리, 지갑 등이 있어요!"],
+        "link":["https://gift.kakao.com/brand/category/95",
+"https://gift.kakao.com/brand/category/96"]
+    },
+    {
+        "id":12,
+        "name": "문구",
+        "content":["아기자기한 나만의 유토피아를 꾸며보고자 하는 당신!\n 그런 당신에게는 문구류를 추",
+"문구에는 텐바이텐, 아트박스, 스튜디오 지브리 등 \n귀엽고 뽀짝한 상품들이 가득한 상점들이 있어요!"],
+        "link":"https://gift.kakao.com/brand/category/94/subcategory/117"
+    },
+    {
+        "id":13,
+        "name": "장난감/게임",
+        "content":["아직도 소중한 동심을 유지하고 있는 당신!\n오랜만에 야무지게 놀아보는 건 어떨까요?",
+"장난감/게임에는 포켓몬스터, 레고, 디즈니 등이 있어요!"],
+        "link":"https://gift.kakao.com/brand/category/98/subcategory/140"
+    },
+    {
+        "id":14,
+        "name": "커플 상품",
+        "content":["연인을 소중하게 생각하는 당신!\n그런 상대에게 함께 나눌 선물 해보는 건 어떨까요?",
+"커플 상품에는 2개씩 동봉되어있는 세트 상품들이 있어요!"],
+        "link":"https://gift.kakao.com/page/code/life_wedding"
+    },
+    {
+        "id":15,
+        "name": "도서",
+        "content":["지적 호기심이 왕성한 당신!\n영감을 줄 만한 좋은 책 하나 어떠신가요?",
+"도서에는 시사, 소설, 자기 계발 등 \n다양한 분야의 책들이 있어요!"],
+        "link":"https://www.kyobobook.co.kr/recommend/main"
+    },
+
+    {
+        "id":20,
+        "name": "식사 기프티콘",
+        "content":["실용적이고 다른 사람들과 함께하는 시간에\n 높은 가치를 두는 당신!\n 혹시 배달의 민족 vip는 아니신가요?\n 함께 먹으면 맛있음이 두 배라고 생각하는 당신에게는\n 식사 기프티콘이 어울려요",
+"식사 기프티콘에는 BHC, BBQ, 피자헛, 버거킹 기프티콘 등이 있어요!"],
+        "link":"https://gift.kakao.com/page/stdcat/103107115"
+    },
+    {
+        "id":21,
+        "name": "카페 기프티콘",
+        "content":["커피 한 잔 할래요 ~ \n커피 한 잔의 여유를 아는 당신!\n 밥보다 디저트파인 당신에게는\n 카페 기프티콘이 어울려요! ","카페 기프티콘에는 스타벅스, \n배스킨라빈스, 설빙 기프티콘 등이 있어요!"],
+        "link":"https://gift.kakao.com/page/stdcat/103107114"
+    },
+    {
+        "id":22,
+        "name": "음식",
+        "content":["집에서 맛있는 걸 먹는 것이 휴식이라 생각하는 당신!\n 풍족한 냉장고를 보면 왠지 뿌듯한 기분이 들진 않나요?\n 이런 당신에게는 신선식품이 어울려요!",
+"신선식품에는 한우, 귤, 술 등이 있어요!"],
+        "link":"https://gift.kakao.com/page/code/life_adult"
+    },
+    {
+        "id":23,
+        "name": "건강식품",
+        "content":["음식, 운동 등 자기관리에 관심이 많은 당신! \n실용적인 선물을 좋아하고 자기관리 만렙인 당신에게는 건강식품이 어울려요!","건강식품에는 종합비타민, 홍삼, 콜라겐 등이 있어요!"],
+        "link":"https://gift.kakao.com/page/code/life_health"
+    },
+
+    {
+        "id":30,
+        "name": "건강 가전",
+        "content":["요즘 건강에 관심이 생긴 당신.\n 건강 가전제품을 선물 받는 것은 어떠신가요? \n보다 건강한 삶을 살아보세요!","건강 가전에는 운동기구, 마사지건 등이 포함되어 있어요!"],
+        "link":"https://gift.kakao.com/brand/7063"
+    },
+    {
+        "id":31,
+        "name": "미용 가전",
+        "content":["요즘 자기관리에 관심이 많으신가요?\n 미용 가전제품을 선물로 받는 것을 추천합니다!","미용가전에는 헤어드라이기, 피부관리기 등의 제품들이 있어요!"],
+        "link":"https://gift.kakao.com/search/result?query=%EB%AF%B8%EC%9A%A9%EA%B0%80%EC%A0%84&searchType=typing_keyword&includeType=all"
+    },
+    {
+        "id":32,
+        "name": "주방가전",
+        "content":["주방 기구들을 선물받는 것은 어떠신가요? \n평소 필요했던 주방 가전제품이 있었다면 이번 기회에 선물로 받아보아요!","주방가전에는 에어프라이기, 주방 도구들이 있어요!"],
+        "link":"https://gift.kakao.com/search/result?query=%EC%A3%BC%EB%B0%A9%EA%B0%80%EC%A0%84&searchType=typing_keyword&includeType=brand"
+    },
+    {
+        "id":33,
+        "name": "디지털",
+        "content":["요즘 교체해야 하는 디지털 기기가 없으신가요?\n 이번 기회에 디지털 기기를 선물로 받아보아요!","디지털에는 무선이어폰, 마우스, 키보드 등이 있어요!"],
+        "link":"https://gift.kakao.com/brand/2604"
+    },
+    {
+        "id":40,
+        "name": "인테리어",
+        "content":["한 번 쓰고 사라질 선물보다 \n오래 사용할 수 있는 실물을 중시하는 당신에게 인테리어 가구/소품을 추천해요!","인테리어 선물에는 쿠션, 의자가 있어요!"],
+        "link":"https://store.ohou.se/ranks"
+    },
+    {
+        "id":41,
+        "name": "굿즈",
+        "content":["당신의 마음을 녹이는 00은 무엇인가요?\n귀여운 걸 좋아하고 00덕후인\n 당신에게 굿즈 선물을 추천해요!","굿즈 선물에는 피규어, 단행본 등이 있어요!"],
+        "link":"https://gift.kakao.com/search/result?query=%EA%B5%BF%EC%A6%88&searchType=typing_keyword"
+    },
+    {
+        "id":42,
+        "name": "꽃/식물",
+        "content":["꾸준한 관리가 필요한 선물도 잘 사용하는\n 실물파 당신에게는 식물을 추천해요!","식물에는 다육식물, 공기 정화 식물이 있어요!"],
+        "link":"https://gift.kakao.com/page/4137"
+    },
+    {
+        "id":43,
+        "name": "장식품",
+        "content":["귀여운 선물을 좋아하는 당신에게는 장식품을 추천해요!","장식품에는 소품 트레이, 드림캐쳐가 있어요!"],
+        "link":"https://gift.kakao.com/page/15550"
+    },
+    {
+        "id":44,
+        "name": "쓸데없지만 재미있는 선물",
+        "content":["선물은 재~밌어야 제~맛!\n재미를 추구하는 당신에게는\n쓸데없지만 재미있는 선물이 어울려요!","쓸데없지만 재미있는 선물에는 반려돌, 랜덤박스가 있어요!"],
+        "link":"https://gift.kakao.com/page/8566"
+    },
+    {
+        "id":50,
+        "name": "영화",
+        "content":["영화를 즐겨보는 당신에게\n 영화 티켓 선물을 추천해요!\n 티켓 선물 받고, 공짜 영화를 관람하러 영화관으로 달려가는 것은 어떨까요?","영화에는 영화 티켓, 팝콘 콤보 기프티콘 등이 있어요!"],
+        "link":"https://gift.kakao.com/brand/3"
+    },
+    {
+        "id":51,
+        "name": "전시회",
+        "content":["다양한 작품들을 관람할 수 있는\n 전시회 티켓을 추천드려요!\n 평소 관심을 가지고 있던 분야의 작품들을 마음껏 볼 수 있는 전시회에 방문해보는 것은 어떨까요?","전시회에는 각종 전시회 입장권들이 있어요!"],
+        "link":"http://ticket.interpark.com/TPGoodsList.asp?Ca=Eve&SubCa=Eve_O"
+    },
+    {
+        "id":52,
+        "name": "연주회",
+        "content":["평소 음악을 좋아하고, \n사람 붐비는 곳에 놀러 가기를 좋아하는 당신에게 \n공연 티켓 선물을 추천해요!\n 좋아하는 공연에 가서\n 평소 쌓아온 스트레스를 싸악 날려버리는 것은 어떨까요?","연주회에는 아이돌 콘서트, 음악 연주회, \n뮤지컬 티켓 등이 포함되어 있어요! "],
+        "link":"http://ticket.interpark.com/TPGoodsList.asp?Ca=Liv"
+    },
+    {
+        "id":53,
+        "name": "액티비티",
+        "content":["신나게 놀고 싶은 당신에게 액티비티 티켓을 선물로 추천드려요! \n간만에 신나게 놀고 싶지 않나요?","액티비티에는 각종 놀이공원, 테마파크 입장권이 있어요! "],
+        "link":"https://gift.kakao.com/brand/12025"
+    },
+    {
+        "id":54,
+        "name": "식사권",
+        "content":["간만에 맛있는 음식,\n 고오급진 음식을 먹고 싶은 당신에게 식사권을 선물로 추천해요!","식사권에는 각종 레스토랑 식사권들이 있어요!"],
+        "link":"https://gift.kakao.com/search/result?query=%EB%A0%88%EC%8A%A4%ED%86%A0%EB%9E%91&searchType=typing_keyword&includeType=brand"
+    },
+    {
+        "id":55,
+        "name": "숙박권",
+        "content":["어디론가 여행 가고 싶은 당신에게 숙박권을 선물로 추천합니다!\n 숙박권을 선물 받고 고오오급진 여행을 떠나보는 것을 어떤가요?"," 숙박권에는 펜션, 호텔 숙박권들이 있어요! "],
+        "link":"https://m.shoppinghow.kakao.com/m/search/q/%ED%98%B8%ED%85%94%EC%88%99%EB%B0%95%EA%B6%8C"
+    },
+    {
+        "id":56,
+        "name": "축제 장비",
+        "content":["거창한 선물이 아닌 소소한 선물도 나쁘지 않은 당신.\n 간단한 축제 아이템을 선물 받는 것은 어떤가요?","축제 아이템에는 폭죽, 별모양 선글라스 등 \n소소한 축제 물품들이 있어요!"],
+        "link":"https://gift.kakao.com/search/result?query=%EC%B6%95%EC%A0%9C&searchType=typing_keyword&includeType=product"
+    }
+]
