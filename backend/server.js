@@ -16,6 +16,19 @@ import cors from "cors"; //리액트 연동을 위한 준비
 
 import bodyParser from "body-parser";
 
+// DB
+import * as mysql from "mysql";
+
+var db = mysql.createConnection({
+  host: "localhost",
+  port: "3306",
+  user: "root",
+  password: "1234",
+  database: "gift",
+});
+
+db.connect();
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
 //html submit 값을 보기 위한 도구
@@ -29,7 +42,7 @@ app.get("/", (req, res) => {
   var _url = req.url;
   var d = url.parse(_url, true).query;
   console.log(d);
-  res.sendFile(__dirname + "../front/build/index.html");
+  res.sendFile(__dirname, "../front/build/index.html");
   // var html=start.HTML();
   // res.send(html);
 });
@@ -77,6 +90,23 @@ app.post("/data2server", function (req, res) {
     };
     res.send(result_json);
   }
+});
+
+app.post("/feedback", function (req, res) {
+  var body = req.body;
+  var sql =
+    "INSERT INTO Feedback (FeedTime, Selection, result, Feedback) VALUES (?, ?, ?, ?);";
+  db.query(
+    sql,
+    [Date.now(), body.selection, body.result, body.feedback],
+    function () {
+      console.log("Feedback of result number: " + body.result);
+      const result_json = {
+        text: body.result,
+      };
+      res.send(result_json);
+    }
+  );
 });
 
 app.get("*", function (req, res) {
