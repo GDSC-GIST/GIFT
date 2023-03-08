@@ -92,21 +92,39 @@ app.post("/data2server", function (req, res) {
   }
 });
 
-app.post("/feedback", function (req, res) {
+app.post("/result/resultReaction", function (req, res) {
   var body = req.body;
   var sql =
-    "INSERT INTO Feedback (FeedTime, Selection, result, Feedback) VALUES (?, ?, ?, ?);";
+    "INSERT INTO Feedback (FeedTime, Selection, result, Feedback) VALUES (CURRENT_TIMESTAMP, ?, ?, ?);";
+  console.log(Date.now(), body.answer, body.result, body.reaction);
+  if (body.reaction == 2) {
+    var feedback = false;
+  } else {
+    var feedback = true;
+  }
   db.query(
     sql,
-    [Date.now(), body.selection, body.result, body.feedback],
-    function () {
+    [JSON.stringify(body.answer), body.result, feedback],
+    function (result, err) {
+      if (err) {
+        console.log(err);
+      }
       console.log("Feedback of result number: " + body.result);
       const result_json = {
         text: body.result,
       };
-      res.send(result_json);
+      res.redirect(result_json);
     }
   );
+});
+
+app.get("/showmethefeedback", function (req, res) {
+  db.query("SELECT * FROM Feedback;", function (err, result) {
+    if (err) {
+      console.log(err);
+    }
+    res.send(result);
+  });
 });
 
 app.get("*", function (req, res) {
