@@ -24,12 +24,11 @@ function WhatgiftPage() {
 
   useEffect(() => {
     //answers의 값이 변할 때 실행
-    console.log(answers);
-    console.log("qnum", qNum.current);
+    // console.log(answers);
     if (ansClicked.current) {
       index.current += 1;
       if (number === qNum.current) {
-        console.log("question finished");
+        // console.log("question finished");
         data2server(true);
       }
       else if (number === 5) {  
@@ -42,7 +41,7 @@ function WhatgiftPage() {
   }, [answers]);
 
   const data2server = (final = false) => {
-    console.log("DATA->SERVER");
+    // console.log("DATA->SERVER");
 
     fetch("data2server", {
       //data2server 주소에서 받을 예정
@@ -54,10 +53,10 @@ function WhatgiftPage() {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json); //typeof json.text == Number
+        // console.log(json); //typeof json.text == Number
         if (final) {
           // console.log("gotoprepare");
-          history.push("/prepare/" + json.text);
+          history.push({pathname: "/prepare/" + json.text, state: {resultID: json.text, answers: answers}});
         } else {
           goSubType(Number(json.text));
           console.log("type change to " + type.current);

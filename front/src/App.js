@@ -5,6 +5,7 @@ import StartPage from './pages/StartPage';
 import ResultPage from './pages/ResultPage';
 import PreparePage from './pages/PreparePage';
 import ErrorPage from './pages/ErrorPage';
+import Motion from './components/what-gift/Motion';
 
 
 function App(){
